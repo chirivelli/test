@@ -1,12 +1,12 @@
 import homepage from './index.html'
 
 Bun.serve({
-    static: {
-        "/": homepage
+    static : {
+        "/": homepage,
+        '/list.json': Response.json({msg : 'my msg'})
     },
 
-    fetch() {
-        return new Response("404!");
-    },
+    fetch : () => new Response("404!"),
+
     port : 8080
 });
