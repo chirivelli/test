@@ -1,4 +1,2 @@
-jsx = "react"
-jsxFactory = "h"
-jsxFragment = "Fragment"
-jsxImportSource = "react"
+[serve.static]
+plugins = ["bun-plugin-tailwind"]

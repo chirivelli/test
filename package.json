@@ -2,10 +2,18 @@
   "name": "test",
   "module": "index.js",
   "type": "module",
+  "scripts": {
+    "dev": "bun run --watch index.js"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind": "^4.0.0"
   }
 }

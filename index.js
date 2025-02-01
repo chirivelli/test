@@ -2,9 +2,10 @@ import homepage from './index.html'
 
 Bun.serve({
     static : {
-        "/": homepage,
-        '/list.json': Response.json({msg : 'my msg'})
+        "/": homepage
     },
+
+    development: true,
 
     fetch : () => new Response("404!"),
 
