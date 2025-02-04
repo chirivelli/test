@@ -3,7 +3,7 @@
   "module": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "bun run --watch index.js"
+    "dev": "bun --watch run index.js"
   },
   "devDependencies": {
     "@types/bun": "latest"
@@ -12,6 +12,7 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
+    "bun-plugin-tailwind": "^0.0.14",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tailwind": "^4.0.0"
